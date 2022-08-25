@@ -9,3 +9,5 @@ def print_tebahpla():
             value_to_print = chr(value - 32)
         print("{}".format(value_to_print), end="")
         value -= 1
+
+print_tebahpla()
