@@ -3,4 +3,5 @@
 def no_c(my_string):
     for car in my_string:
         if car in "cC":
-            my_string.remove(car)
+            my_string = my_string.replace(car, '')
+    return my_string
