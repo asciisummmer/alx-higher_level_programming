@@ -2,7 +2,4 @@
 def element_at(my_list, idx):
     if idx < 0 or idx >= len(my_list):
         return None
-    my_list = []
-    return my_list
-
-print(element_at([1, 4, -1], 1))
+    return my_list.pop(idx)
