@@ -2,5 +2,9 @@
 
 def print_matrix_integer(matrix=[[]]):
     for line in matrix:
-        l = [str(x) for x in line]
-        print(" ".join(l))
+        for i in range(0, len(line)):
+            if i + 1 == len(line):
+                print(line[i], end="")
+            else:
+                print(line[i], end=" ")
+        print()
