@@ -5,8 +5,13 @@
 
 class Square:
     """ Class to create Square """
-    def __init__(self, size=0):
 
+    def __init__(self, size=0):
+        """Initialize  square
+
+        Args:
+            size (int): Size of new square
+        """
         if not isinstance(size, int):
             raise TypeError("size must be integer")
 
