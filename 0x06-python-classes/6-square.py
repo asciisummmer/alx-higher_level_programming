@@ -4,7 +4,7 @@
 
 class Square:
     """ Class to create Square """
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
         """ Create new instance of square
@@ -19,7 +19,8 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple) or len(value) != 2 or value[0] < 0 or value[1] < 0:
+        if not isinstance(value, tuple) or \
+           len(value) != 2 or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
@@ -43,7 +44,11 @@ class Square:
         if self.size == 0:
             print()
             return
+        for y in range(self.position[1]):
+            print()
         for i in range(self.size):
+            for x in range(self.position[0]):
+                print(" ", end="")
             for j in range(self.size):
                 print("#", end="")
             print()
