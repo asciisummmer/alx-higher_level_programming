@@ -59,7 +59,7 @@ class Rectangle:
         if rect_1.area() < rect_2.area():
             return rect_2
         else:
-            rect_1
+            return rect_1
 
     def __str__(self):
         result = ""
