@@ -25,3 +25,4 @@ if __name__ == "__main__":
         case _:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
+    exit(0)
