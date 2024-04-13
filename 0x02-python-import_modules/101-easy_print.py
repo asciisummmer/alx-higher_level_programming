@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec("for char in '#pythoniscool':__import__('os').write(1,bytes(char,'utf-8'))")
+exec("__import__('os').write(1,bytes('#pythoniscool\\n','utf-8'))")
