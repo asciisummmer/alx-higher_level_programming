@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" Module to use type function"""
+""" Module to use isinstance function"""
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """ Verify class of object
 
     Args:
@@ -12,6 +12,4 @@ def is_same_class(obj, a_class):
     Returns:
         True if is same class otherwise false
     """
-    if type(obj) is a_class:
-        return True
-    return False
+    return isinstance(obj, a_class)
