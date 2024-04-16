@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """ Module to use isinstance function"""
 
 
@@ -13,4 +12,4 @@ def inherits_from(obj, a_class):
     Returns:
         True if is same class otherwise false
     """
-    return issubclass(type(obj), a_class)
+    return issubclass(type(obj), a_class) and type(obj) is not a_class
