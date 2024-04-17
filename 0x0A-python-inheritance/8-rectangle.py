@@ -14,9 +14,18 @@ class Rectangle(BaseGeometry):
         ''' Verify value is integer and greather than zero
 
         Note:
+            Do not include the `self` parameter in the ``Args`` section.
+
         Args:
-            value (int):
-            name (str): 
+            value (int): value to check
+            name (str): name of variable of value
+
+        Returns:
+            return value if integr greather than zero
+
+        Raises:
+            TypeError: if value not integer
+            ValueError: if value less than zero
         '''
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
