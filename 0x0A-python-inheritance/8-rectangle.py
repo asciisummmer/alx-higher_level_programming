@@ -17,7 +17,7 @@ class Rectangle(BaseGeometry):
         __height = self.integer_validator(height, "height")
 
     def integer_validator(self, value, name):
-        ''' Verify value is integer and greather than zero
+        """ Verify value is integer and greather than zero
 
         Note:
             Do not include the `self` parameter in the ``Args`` section.
@@ -32,7 +32,7 @@ class Rectangle(BaseGeometry):
         Raises:
             TypeError: if value not integer
             ValueError: if value less than zero
-        '''
+        """
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         elif value < 0:
