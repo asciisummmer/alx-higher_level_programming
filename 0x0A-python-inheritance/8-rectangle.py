@@ -3,6 +3,12 @@
 
 
 class Rectangle(BaseGeometry):
+    """ Module to represent Rectangle
+
+    Attributes:
+        __width (int): width of rectangle
+        __height (int): height of rectangle
+    """
     __width = 0
     __height = 0
 
