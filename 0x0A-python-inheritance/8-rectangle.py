@@ -12,7 +12,13 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
-        
+        """Create new square 
+
+        Args:
+            width (int): width of Rectangle
+            height (int): height of Rectangle
+        """
+
         self.__width = BaseGeometry.integer_validator(self, "width", width)
         self.__height = BaseGeometry.integer_validator(self, "height", height)
         super().__init__()
