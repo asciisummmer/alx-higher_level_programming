@@ -3,6 +3,7 @@
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
+
 class Rectangle(BaseGeometry):
     """ Module to represent Rectangle
 
@@ -12,7 +13,7 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
-        """Create new square 
+        """Create new square
 
         Args:
             width (int): width of Rectangle
