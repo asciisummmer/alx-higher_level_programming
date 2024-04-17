@@ -10,8 +10,6 @@ class MyInt(int):
 
     def __eq__(self, other):
         if self.value == other:
-            print("ho")
-            print(other)
             return False
         else:
             return True
