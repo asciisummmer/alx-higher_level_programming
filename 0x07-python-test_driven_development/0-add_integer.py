@@ -15,15 +15,14 @@ def add_integer(a, b=98):
         if type(a) is not int and type(a) is not float:
             raise TypeError
         a = int(a)
-    except (ValueError, TypeError):
+    except (OverflowError, ValueError, TypeError):
         raise TypeError("a must be an integer")
 
     try:
         if type(b) is not int and type(b) is not float:
             raise TypeError
         b = int(b)
-    except (ValueError, TypeError):
+    except (OverflowError, ValueError, TypeError):
         raise TypeError("b must be an integer")
-    result = a + b
-    if result == float("inf") or result == -float("inf"):
-        return 89
+
+    return a + b
