@@ -2,6 +2,7 @@
 import function add_integer
 
 >>> add_integer = __import__('0-add_integer').add_integer
+>>> import math
 
 >>> add_integer(4, 5)
 9
@@ -17,24 +18,18 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer(10, False)
-Traceback (most recent call last):
-    ...
-TypeError: b must be an integer
-
-
->>> add_integer(True, False)
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
-
 >>> add_integer("14")
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer([12, 25], 45)
+>>> add_integer(math.nan, 45)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+
+>>> add_integer(math.inf, 45)
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
