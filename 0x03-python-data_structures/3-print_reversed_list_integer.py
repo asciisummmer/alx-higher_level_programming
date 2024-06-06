@@ -5,6 +5,3 @@ def print_reversed_list_integer(my_list=[]):
     tmp.reverse()
     for i in tmp:
         print("{:d}".format(i))
-
-my_list = [1, 2, 3, 4, 5]
-print_reversed_list_integer(my_list)
