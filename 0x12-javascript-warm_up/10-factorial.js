@@ -8,4 +8,5 @@ function factorial (number) {
   return number * factorial(number - 1);
 }
 
-factorial(parseInt(argv[2]));
+const facto = factorial(parseInt(argv[2]));
+console.log(facto);
