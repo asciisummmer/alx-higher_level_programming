@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" fetch data from ressource 
+""" fetch data from ressource
 """
 
 from urllib import request
