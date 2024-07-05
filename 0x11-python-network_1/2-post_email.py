@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """ Send data post
 """
+
 import sys
-import urllib.request
-import urllib.parse
+from urllib import request, parse
 
 
 if __name__ == "__main__":
