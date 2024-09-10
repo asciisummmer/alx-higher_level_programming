@@ -6,6 +6,10 @@
 
 
 def text_indentation(text):
+    """
+        Function to transform text
+    """
+
     if type(text) is not str:
         raise TypeError("text must be a string")
     text_translation = str.maketrans({'.': '.\n\n', '?': '?\n\n', ':': '\n\n'})
