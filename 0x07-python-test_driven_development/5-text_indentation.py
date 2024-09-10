@@ -12,6 +12,8 @@ def text_indentation(text):
 
     if type(text) is not str:
         raise TypeError("text must be a string")
-    text_translation = str.maketrans({'.': '.\n\n', '?': '?\n\n', ':': '\n\n'})
+    text_translation = str.maketrans({
+        '. ': '.\n\n', '? ': '?\n\n', ': ': ':\n\n',
+        '.': '.\n\n', '?': '?\n\n', ':': ':\n\n'})
     translated_text = text.translate(text_translation)
     print(translated_text)
