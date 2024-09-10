@@ -12,10 +12,9 @@ TypeError: first_name must be a string
 Traceback (most recent call last):
 TypeError: last_name must be a string
 
->>> say_my_name(None, None)
+>>> say_my_name(None)
 Traceback (most recent call last):
 TypeError: first_name must be a string
 
->>> say_my_name("Bon", None)
-Traceback (most recent call last):
-TypeError: last_name must be a string
+>>> say_my_name("Bon")
+My name is Bon 
