@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-""" Module supplies function to divide matrix.
+""" Module supplies function to say my name.
 
-    Module to describe how to divide matrix.
+    Module to describe how to say my name.
 """
 
 
