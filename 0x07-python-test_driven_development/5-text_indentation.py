@@ -21,4 +21,4 @@ def text_indentation(text):
     translated_text = translated_text.replace(":\n\n ", ":\n\n")
     translated_text = translated_text.replace(".\n\n ", ".\n\n")
 
-    print(translated_text)
+    print(translated_text, end="")
