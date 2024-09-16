@@ -1,2 +1,2 @@
 # Learn python programming by exercices
-## conditions Python - Everything is Object
+## Python - Everything is Object
