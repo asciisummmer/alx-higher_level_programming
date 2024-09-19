@@ -31,33 +31,33 @@ class Rectangle(Base):
         self.__y = y
 
     @property
-    def width():
+    def width(self):
         return self.__width
 
     @property
-    def height():
+    def height(self):
         return self.__height
 
     @property
-    def x():
+    def x(self):
         return self.__x
 
     @property
-    def y():
+    def y(self):
         return self.__y
 
     @width.setter
-    def width(w):
+    def width(self, w):
         self.__width = w
 
     @height.setter
-    def height(h):
+    def height(self, h):
         self.__height = h
 
     @x.setter
-    def cord_x(x):
+    def cord_x(self, x):
         self.__x = x
 
     @y.setter
-    def cord_y(y):
+    def cord_y(self, y):
         self.__y = y
