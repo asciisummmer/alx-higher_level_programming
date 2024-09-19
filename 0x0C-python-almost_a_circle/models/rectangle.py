@@ -55,9 +55,9 @@ class Rectangle(Base):
         self.__height = h
 
     @x.setter
-    def cord_x(self, x):
-        self.__x = x
+    def x(self, value):
+        self.__x = value
 
     @y.setter
-    def cord_y(self, y):
-        self.__y = y
+    def y(self, value):
+        self.__y = value
