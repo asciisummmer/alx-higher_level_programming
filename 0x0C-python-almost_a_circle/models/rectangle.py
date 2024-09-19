@@ -38,6 +38,14 @@ class Rectangle(Base):
     def height():
         return self.__height
 
+    @property
+    def x():
+        return self.__x
+
+    @property
+    def y():
+        return self.__y
+
     @width.setter
     def width(w):
         self.__width = w
@@ -45,3 +53,11 @@ class Rectangle(Base):
     @height.setter
     def height(h):
         self.__height = h
+
+    @x.setter
+    def cord_x(x):
+        self.__x = x
+
+    @y.setter
+    def cord_y(y):
+        self.__y = y
