@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """ Module to describe base of model
 
 """
