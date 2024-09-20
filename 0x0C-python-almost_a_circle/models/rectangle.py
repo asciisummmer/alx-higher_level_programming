@@ -86,3 +86,10 @@ class Rectangle(Base):
         """ Compute area of reactangle
         """
         return self.__width * self.__height
+
+    def display(self):
+        """ Display rectangle
+        """
+        line = "#" * self.__width
+        for i in range(0, self.__height):
+            print(line)
