@@ -1,0 +1,27 @@
+#!/usr/bin/python3
+""" Module to define square
+
+"""
+
+from .rectangle import Rectangle
+
+
+class Square(Rectangle):
+    """Class to define square
+
+    Args:
+        size (int): size of square
+        x (int): position of square
+        y (int): position of square
+        id (int): identifiant of square
+
+    Attributes:
+        inherit from Rectangle
+
+    """
+
+    def __init__(self, size, x=0, y=0, id=None):
+        super().__init__(size, size, x, y, id)
+
+    def __str__(self):
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
