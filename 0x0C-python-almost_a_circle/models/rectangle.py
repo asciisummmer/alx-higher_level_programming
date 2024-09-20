@@ -99,8 +99,6 @@ class Rectangle(Base):
             print(line)
 
     def __str__(self):
-        """ String representation of object
-        """
         res = f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
         res += f"{self.__width}/{self.__height}"
         return res
