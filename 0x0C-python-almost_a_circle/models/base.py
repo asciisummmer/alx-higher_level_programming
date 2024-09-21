@@ -39,8 +39,6 @@ class Base:
                 f.write("[]")
         else:
             list_objs_dict = [elt.to_dictionary() for elt in list_objs]
-            print("Ho")
             print(list_objs_dict)
-            print("Ho")
             with open(f"{str(cls.__name__)}.json", "w") as f:
                 f.write(cls.to_json_string(list_objs_dict))
