@@ -64,6 +64,8 @@ class Square(Rectangle):
                     self.y = value
 
     def to_dictionary(self):
+        """Class to dictionnary
+        """
         return {
             "id": self.id,
             "size": self.size,
