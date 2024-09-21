@@ -35,7 +35,7 @@ class Base:
     @classmethod
     def save_to_file(cls, list_objs):
         if list_objs is None or list_objs == []:
-            with open(f"{str(cls)}.json", "w") as f:
+            with open(f"{str(cls.__name__)}.json", "w") as f:
                 f.write("[]")
         else:
             list_objs_dict = [elt.to_dictionary() for elt in list_objs]
