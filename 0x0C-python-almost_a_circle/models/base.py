@@ -41,3 +41,10 @@ class Base:
             list_objs_dict = [elt.to_dictionary() for elt in list_objs]
             with open(f"{str(cls.__name__)}.json", "w") as f:
                 f.write(cls.to_json_string(list_objs_dict))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or \
+           json_string == '[]' or json_string == '':
+            return []
+        return json.loads(json_string)
