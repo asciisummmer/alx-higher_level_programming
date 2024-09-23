@@ -48,3 +48,9 @@ class Base:
            json_string == '[]' or json_string == '':
             return []
         return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        instance = cls(1, 1, 0, 0, None)
+        instance.update(**dictionary)
+        return instance
