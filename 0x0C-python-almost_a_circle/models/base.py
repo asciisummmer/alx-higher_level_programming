@@ -51,6 +51,6 @@ class Base:
 
     @classmethod
     def create(cls, **dictionary):
-        instance = cls(1, 1, 0, 0, None)
+        instance = cls(1, 1)
         instance.update(**dictionary)
         return instance
